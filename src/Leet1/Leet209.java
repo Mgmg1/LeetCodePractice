@@ -10,6 +10,12 @@ public class Leet209 {
     }
 
 
+    /**
+     * 时间复杂度为O(n)的做法，精髓是遍历时 算出以i为结尾的最小的长度子数组，一边遍历一边比较
+     * @param nums
+     * @param s
+     * @return
+     */
     public static int way1( int[] nums ,int s ) {
 
         int sum1 = nums[0];
@@ -36,5 +42,6 @@ public class Leet209 {
         }
         return minLength;
     }
+
 
 }
